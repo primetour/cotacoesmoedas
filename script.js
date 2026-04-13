@@ -115,7 +115,7 @@ function formatarVariacao(valor) {
   if (valor === null || Number.isNaN(valor)) return null;
 
   const arredondado = Math.abs(valor).toFixed(2).replace(".", ",");
-  const classe = valor > 0 ? "up" : valor < 0 ? "down" : "neutral";
+  const classe = valor > 0 ? "down" : valor < 0 ? "up" : "neutral";
   const seta = valor > 0 ? "▲" : valor < 0 ? "▼" : "•";
 
   return {
